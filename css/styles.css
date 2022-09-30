@@ -26,6 +26,7 @@ h6 {
   margin: 0;
 }
 ul {
+  list-style: none;
   margin: 0;
   padding-left: 0;
 }
@@ -161,8 +162,19 @@ body {
 }
 /*-----------Hero---------------*/
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding: 200px 0px;
   background-color: var(--footer-bcg-colour);
+}
+.hero-bcg {
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../photo/bcgimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   width: 696px;
@@ -317,6 +329,19 @@ body {
   color: var(--secondary-text-colour);
 }
 
+.team-sn-list {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-sn-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #000000;
+}
 /*----------FOOTER------------*/
 .footer {
   padding-top: 60px;
