@@ -157,10 +157,26 @@ body {
   letter-spacing: 0.02em;
   color: var(--contacts-header-colour);
 }
-.header-contact-link:hover {
+
+.header-contact-icon {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: var(--accent-colour);
 }
+
+.header-contact-link:hover .header-contact-icon {
+  fill: var(--accent-colour);
+}
+
 /*-----------Hero---------------*/
+
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -388,9 +404,9 @@ body {
 }
 .footer-n {
   display: flex;
+  align-items: baseline;
 }
 .social {
-  margin-top: 12px;
   margin-left: 70px;
   width: 206px;
   height: 80px;
@@ -459,21 +475,26 @@ body {
 .port-btn:hover {
   background-color: var(--accent-colour);
   color: var(--bot-logo-colour);
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
 }
 .port-list {
   display: flex;
   flex-wrap: wrap;
 }
 .port-item {
-  border-bottom: rgba(0, 0, 0, 0.25);
   width: 370px;
   height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
 
   background-color: var(--bot-logo-colour);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #eeeeee;
+  border-bottom: rgba(0, 0, 0, 0.25);
 }
+.port-item:hover {
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f;
+}
+
 .port-item:nth-child(3n) {
   margin-right: 0px;
 }
