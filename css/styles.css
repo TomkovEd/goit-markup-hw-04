@@ -387,6 +387,57 @@ body {
   fill: #ffffff;
   background-color: var(--accent-colour);
 }
+/*---------CLIENTS------------*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-colour);
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 30px;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-item:last-child {
+  margin-right: 0px;
+}
+
+.client-icon {
+  fill: #afb1b8;
+}
+
+.client-item:hover,
+.client-item:focus {
+  border: 1px solid #2196f3;
+}
+
+.client-item:hover .client-icon {
+  fill: var(--accent-colour);
+}
 
 /*----------FOOTER------------*/
 .footer {
@@ -466,6 +517,7 @@ body {
 /*---------------PORTFOLIO--------------*/
 
 .button-list {
+  margin-bottom: 34px;
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
